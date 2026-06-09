@@ -74,10 +74,14 @@ export default function Header({ isDark, onThemeToggle }: HeaderProps) {
         <a 
           href="#home" 
           onClick={(e) => { e.preventDefault(); handleLinkClick('home'); }}
-          className="flex items-center gap-2 group"
+          className="flex items-center gap-3 group"
           id="nav-logo"
         >
-          <Dumbbell className="w-8 h-8 text-primary transition-transform group-hover:rotate-45 duration-300" />
+          <img 
+            src="/images/logo.png" 
+            alt="The Mad Fitness Logo" 
+            className="w-10 h-10 md:w-12 md:h-12 object-contain transition-transform group-hover:scale-110 duration-300 rounded-full"
+          />
           <span className={`font-anton text-2xl md:text-3xl tracking-tighter uppercase ${!isScrolled ? 'text-white' : 'text-on-surface'}`}>
             THE MAD <span className="text-primary italic">FITNESS</span>
           </span>
