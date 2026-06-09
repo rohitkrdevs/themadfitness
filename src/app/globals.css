@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #f9f9f9;
+  --surface-color: #ffffff;
+  --surface-container-color: #f0f0f0;
+  --surface-container-low-color: #f5f5f5;
+  --surface-container-lowest-color: #ffffff;
+  --surface-container-high-color: #e8e8e8;
+  --on-surface-color: #121414;
+  --outline-color: #d2c5c0;
+  color-scheme: light;
+}
+
+.dark {
+  --bg-color: #121414;
+  --surface-color: #1a1c1c;
+  --surface-container-color: #242626;
+  --surface-container-low-color: #1e2020;
+  --surface-container-lowest-color: #161818;
+  --surface-container-high-color: #2a2c2c;
+  --on-surface-color: #e2e2e2;
+  --outline-color: #3f484a;
+  color-scheme: dark;
+}
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  --font-anton: var(--font-anton), sans-serif;
+
+  --color-primary: #ff562b;
+  --color-background: var(--bg-color);
+  --color-surface: var(--surface-color);
+  --color-surface-container: var(--surface-container-color);
+  --color-surface-container-low: var(--surface-container-low-color);
+  --color-surface-container-lowest: var(--surface-container-lowest-color);
+  --color-surface-container-high: var(--surface-container-high-color);
+  --color-on-surface: var(--on-surface-color);
+  --color-outline: var(--outline-color);
+}
+
+@layer utilities {
+  .brutal-border {
+    border: 1px solid currentColor;
+  }
+}

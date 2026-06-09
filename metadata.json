@@ -1,0 +1,6 @@
+{
+  "name": "The Mad Fitness",
+  "description": "Premium industrial brutalist fitness coaching portal by Head Coach Madhukar Mishra. Offers comprehensive baseline fitness assessments, training architecture, and raw progress logs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
