@@ -10,8 +10,8 @@ const siteUrl = 'https://themadfitness.com';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'Madhukar Mishra | Fitness Coach & Personal Trainer in New Delhi',
-  description: 'Personal fitness coaching by Madhukar Mishra, an NSDC Level 4 fitness coach specializing in strength and conditioning, weight loss, fitness assessment, group training, and nutrition counselling.',
+  title: 'Madhukar Mishra | Fitness Coach in New Delhi',
+  description: 'Train with Madhukar Mishra, a New Delhi fitness coach specializing in strength, weight loss, personal training, Pilates and nutrition guidance.',
   keywords: 'Madhukar Mishra, fitness coach New Delhi, personal trainer Delhi, strength and conditioning coach, weight loss coach, group fitness, nutrition counselling, NSDC Level 4 fitness coach, BWF coach, The Mad Fitness',
   authors: [{ name: 'Madhukar Mishra' }],
   creator: 'Madhukar Mishra',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     images: [
       {
-        url: '/opengraph-image.jpg',
+        url: '/images/madhukar-mishra-og.jpg',
         width: 1200,
         height: 630,
         alt: 'Madhukar Mishra - Fitness Coach and Consultant at The Mad Fitness',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Madhukar Mishra | Fitness Coach in New Delhi',
     description: 'Expert personal fitness coaching, strength and conditioning, fitness assessments, and nutrition counselling by Madhukar Mishra.',
-    images: ['/opengraph-image.jpg'],
+    images: ['/images/madhukar-mishra-og.jpg'],
   },
   icons: {
     icon: '/icon.png',
@@ -93,7 +93,7 @@ const structuredData = {
       '@id': `${siteUrl}/#business`,
       name: 'The Mad Fitness',
       url: siteUrl,
-      image: `${siteUrl}/opengraph-image.jpg`,
+      image: `${siteUrl}/images/madhukar-mishra-og.jpg`,
       founder: { '@id': `${siteUrl}/#madhukar-mishra` },
       telephone: '+91 9572727348',
       email: 'samnouske14@gmail.com',
