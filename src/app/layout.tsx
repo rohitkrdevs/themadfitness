@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const anton = Anton({ weight: '400', subsets: ['latin'], variable: '--font-anton' });
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
-const siteUrl = 'https://themadfitness.com';
+const siteUrl = 'https://themadfitness.netlify.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
