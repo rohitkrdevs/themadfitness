@@ -11,6 +11,7 @@ import Header from '../components/Header';
 import Services from '../components/Services';
 import About, { CareerHistory } from '../components/About';
 import Proof from '../components/Proof';
+import Transformations from '../components/Transformations';
 import TransformationHub from '../components/TransformationHub';
 import Programs from '../components/Programs';
 import LeadCapture from '../components/LeadCapture';
@@ -114,7 +115,7 @@ export default function App() {
 
             <div className="grid grid-cols-3 w-full max-w-2xl mt-9 border-y border-black/10 dark:border-white/10">
               {[
-                { value: '5+', label: 'Years Experience' },
+                { value: '7+', label: 'Years Experience' },
                 { value: '300+', label: 'People Coached' },
                 { value: 'Level 4', label: 'NSDC Certified' }
               ].map((stat) => (
@@ -194,6 +195,9 @@ export default function App() {
 
         {/* Actions Proof Inspectable Modal block */}
         <Proof />
+
+        {/* Client transformation gallery */}
+        <Transformations />
 
         {/* Services Bento Grid block */}
         <Services />

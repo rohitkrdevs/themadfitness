@@ -9,7 +9,7 @@ export const COACH_INFO = {
   fullName: "Madhukar Mishra",
   headline: "FITNESS COACH & CONSULTANT",
   profileImage: "/images/madhukar-mishra.jpg",
-  intro: "With over 5 years of experience in the fitness industry, I am a passionate and results-driven fitness coach dedicated to helping individuals achieve their health and fitness goals.",
+  intro: "With over 7 years of experience in the fitness industry, I am a passionate and results-driven fitness coach dedicated to helping individuals achieve their health and fitness goals.",
   description: "I specialize in strength and conditioning, weight loss, and personalized workout plans tailored to meet each client's unique needs. My coaching combines proper form, safe technique, practical nutrition guidance, and consistent motivation.",
   badges: [
     { label: "300+ People Coached", icon: "TrendingUp" },
