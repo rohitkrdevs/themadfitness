@@ -138,7 +138,7 @@ export default function AssessmentCalculator({ onAssessmentSave }: AssessmentCal
             Fitness Assessment Engine
           </h2>
           <p className="font-sans text-xs md:text-sm text-on-surface/70 mt-3 max-w-xl mx-auto leading-relaxed">
-            Stop estimating your fuel and volume boundaries. Use our clinical baseline compiler to structure your metabolic threshold on Noida standards.
+            Stop estimating your fuel and training boundaries. Use the baseline calculator to build a clearer starting point for your fitness plan.
           </p>
         </div>
 

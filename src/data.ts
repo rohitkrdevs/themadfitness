@@ -7,14 +7,72 @@ import { ActionShot, Program } from './types';
 
 export const COACH_INFO = {
   fullName: "Madhukar Mishra",
-  headline: "HEAD COACH & FOUNDER",
+  headline: "FITNESS COACH & CONSULTANT",
   profileImage: "/images/madhukar-mishra.jpg",
-  intro: "Fitness is not a hobby; it is a brutal demand for self-respect. As the founder of The Mad Fitness, my approach is rooted in uncompromising discipline, biomechanical precision, and absolute accountability.",
-  description: "With years of specialized experience in hyper-targeted body transformations, I don't sell workouts. I construct resilient bodies and unbreakable mindsets. Whether you are aiming for severe fat reduction or structural hypertrophy, the programming is absolute.",
+  intro: "With over 5 years of experience in the fitness industry, I am a passionate and results-driven fitness coach dedicated to helping individuals achieve their health and fitness goals.",
+  description: "I specialize in strength and conditioning, weight loss, and personalized workout plans tailored to meet each client's unique needs. My coaching combines proper form, safe technique, practical nutrition guidance, and consistent motivation.",
   badges: [
-    { label: "ISSA Certified Trainer", icon: "Check" },
-    { label: "Result-Based Coaching", icon: "TrendingUp" },
-    { label: "Fat Loss Specialist", icon: "Flame" }
+    { label: "300+ People Coached", icon: "TrendingUp" },
+    { label: "NSDC Level 4 Coach", icon: "Check" },
+    { label: "BWF Level 1 Coach", icon: "Award" }
+  ],
+  career: [
+    {
+      role: "Pilates Group Class Instructor",
+      company: "Khelo Ranchi",
+      period: "April 2024 - Present",
+      highlights: [
+        "Conducted Pilates group classes focused on strength, flexibility, posture, core stability, and overall fitness.",
+        "Guided participants with proper exercise form, breathing techniques, body alignment, and safety measures during sessions.",
+        "Helped individuals improve mobility, balance, endurance, and confidence through structured group training programs."
+      ]
+    },
+    {
+      role: "Fitness Coach & Consultant",
+      company: "Shurufit India (2M Followers)",
+      period: "April 2021 - Present",
+      highlights: [
+        "Helped more than 300 people achieve their fitness goals.",
+        "Educated clients on proper exercise form, technique, and safety measures."
+      ]
+    },
+    {
+      role: "Strength & Conditioning Coach",
+      company: "Fire Rallies Sports Academy, Dubai",
+      period: "July 2023 - June 2024",
+      highlights: [
+        "Optimized the physical performance of professional athletes through targeted strength training, conditioning, and injury-prevention strategies."
+      ]
+    },
+    {
+      role: "Personal Trainer",
+      company: "Crush Fitness, India",
+      period: "January 2019 - April 2021",
+      highlights: [
+        "Attended events across multiple states while representing Parijat Fitness.",
+        "Delivered personal training to more than 30 clients across Delhi.",
+        "Worked as a fitness assessor for corporate clients.",
+        "Led strength training, HIIT, and Pilates group fitness classes.",
+        "Conducted corporate group classes for more than 50 participants."
+      ]
+    }
+  ],
+  skills: [
+    "Exercise Instruction",
+    "Client Motivation",
+    "Fitness Assessment",
+    "Group Fitness",
+    "Nutrition Counselling"
+  ],
+  certifications: [
+    "NSDC Level 4 - Fitness Coach",
+    "BWF Coach (Level 1)",
+    "BWF Shuttle Time"
+  ],
+  education: [
+    "B.Com (Accounts Hons), Ranchi University - 2016-2019",
+    "12th, NIOS - 2015",
+    "10th, APS Ranchi - 2013"
   ]
 };
 

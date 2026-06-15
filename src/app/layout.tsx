@@ -7,14 +7,14 @@ const anton = Anton({ weight: '400', subsets: ['latin'], variable: '--font-anton
 const jetbrainsMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
 export const metadata: Metadata = {
-  title: 'The Mad Fitness | Expert Personal Trainer & Fitness Coach in Noida & Ranchi',
-  description: 'Top-rated personal fitness coach and diet plan personal trainer by Madhukar Mishra. Specializing in physical transformation, badminton coaching, and biomechanics in Ranchi and Noida.',
-  keywords: 'Fitness coach, diet plan personal trainer, badminton coach, personal coach, fitness trainer Noida, fitness trainer Ranchi, Madhukar Mishra, The Mad Fitness, personal trainer near me, fat loss coach',
+  title: 'The Mad Fitness | Madhukar Mishra - Fitness Coach in New Delhi',
+  description: 'Personal fitness coaching by Madhukar Mishra, an NSDC Level 4 fitness coach specializing in strength and conditioning, weight loss, fitness assessment, group training, and nutrition counselling.',
+  keywords: 'Madhukar Mishra, fitness coach New Delhi, personal trainer Delhi, strength and conditioning coach, weight loss coach, group fitness, nutrition counselling, NSDC Level 4 fitness coach, BWF coach, The Mad Fitness',
   authors: [{ name: 'Madhukar Mishra' }],
   creator: 'Madhukar Mishra',
   openGraph: {
-    title: 'The Mad Fitness | Personal Coach in Noida & Ranchi',
-    description: 'Transform your body with expert fitness, diet coaching, and badminton training by Madhukar Mishra. Available in Noida and Ranchi.',
+    title: 'The Mad Fitness | Madhukar Mishra - Fitness Coach',
+    description: 'Strength, conditioning, weight loss, group fitness, and personalized coaching by Madhukar Mishra in New Delhi.',
     url: 'https://themadfitness.com',
     siteName: 'The Mad Fitness',
     locale: 'en_IN',
@@ -22,8 +22,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Mad Fitness | Personal Trainer & Badminton Coach',
-    description: 'Expert fitness coaching, custom diet plans, and badminton coaching in Ranchi and Noida.',
+    title: 'The Mad Fitness | Personal Trainer in New Delhi',
+    description: 'Expert personal fitness coaching, strength and conditioning, fitness assessments, and nutrition counselling by Madhukar Mishra.',
   },
 };
 

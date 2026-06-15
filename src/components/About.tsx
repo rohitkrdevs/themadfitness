@@ -4,7 +4,7 @@
  */
 
 import { COACH_INFO } from '../data';
-import { BadgeCheck, TrendingUp, Flame, Award, ChevronRight, Focus } from 'lucide-react';
+import { BadgeCheck, TrendingUp, Award, ChevronRight, Focus, BriefcaseBusiness, GraduationCap, Medal, CheckCircle2 } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export default function About() {
@@ -14,18 +14,12 @@ export default function About() {
         return <BadgeCheck className="w-5 h-5 text-primary" />;
       case "TrendingUp":
         return <TrendingUp className="w-5 h-5 text-primary" />;
-      case "Flame":
-        return <Flame className="w-5 h-5 text-primary" />;
+      case "Award":
+        return <Award className="w-5 h-5 text-primary" />;
       default:
         return <Award className="w-5 h-5 text-primary" />;
     }
   };
-
-  const quoteSteps = [
-    { title: "01. UNCOMPROMISING BIOMECHANICS", desc: "No randomized routines. Every lift, stance, and tempo is calculated to isolate specific motor units, maximizing myofibrillar development." },
-    { title: "02. RADICAL ACCOUNTABILITY", desc: "Your results are a direct outcome of your dedication. Daily status reviews ensure absolute adherence to nutritional and load protocols." },
-    { title: "03. SUSTAINABLE RECOMPOSITION", desc: "We construct metabolic furnaces. Fat loss is engineered via optimized energy pathways, not baseline caloric starvation." }
-  ];
 
   return (
     <section id="about" className="py-24 md:py-32 bg-surface-container-low border-b border-outline-variant/30">
@@ -52,7 +46,7 @@ export default function About() {
               {/* Trust Tag */}
               <div className="absolute bottom-0 left-0 bg-surface-container-lowest/90 backdrop-blur-sm p-4 border-t border-r border-outline-variant/40">
                 <p className="font-mono text-[10px] tracking-widest text-primary uppercase font-bold flex items-center gap-1.5 animate-pulse">
-                  <Focus className="w-3 h-3 text-primary" /> CERTIFIED EXPERT HEAD COACH
+                  <Focus className="w-3 h-3 text-primary" /> {COACH_INFO.headline}
                 </p>
               </div>
             </motion.div>
@@ -105,28 +99,73 @@ export default function About() {
 
         </div>
 
-        {/* Dynamic Philosophy Pillars */}
-        <div className="mt-20 pt-16 border-t border-outline-variant/30 grid grid-cols-1 md:grid-cols-3 gap-8" id="philosophical-pillars">
-          {quoteSteps.map((pillar, i) => (
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.15, duration: 0.5 }}
-              key={i} 
-              className="p-6 bg-surface-container-lowest border-l-2 border-primary hover:border-l-4 transition-all duration-200"
+      </div>
+    </section>
+  );
+}
+
+export function CareerHistory() {
+  return (
+    <section id="career-history" className="py-24 md:py-32 bg-background border-b border-outline-variant/30">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div>
+          <span className="font-mono text-xs text-primary mb-2 block uppercase tracking-widest">
+            03 // CAREER HISTORY
+          </span>
+          <h3 className="font-anton text-3xl md:text-4xl uppercase mb-10 tracking-tight text-on-surface">
+            Experience Built <span className="text-primary italic">In The Field</span>
+          </h3>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {COACH_INFO.career.map((job) => (
+            <div
+              key={`${job.role}-${job.company}`}
+              className="p-6 md:p-7 bg-surface-container-lowest border border-outline/20 border-t-2 border-t-primary shadow-sm"
             >
-              <h4 className="font-anton text-lg tracking-wider text-on-surface uppercase mb-3 text-primary">
-                {pillar.title}
+              <BriefcaseBusiness className="w-6 h-6 text-primary mb-5" />
+              <p className="font-mono text-[10px] text-primary uppercase font-bold tracking-widest mb-2">{job.period}</p>
+              <h4 className="font-anton text-xl tracking-wide text-on-surface uppercase mb-1">
+                {job.role}
               </h4>
-              <p className="font-sans text-xs text-on-surface/70 leading-relaxed">
-                {pillar.desc}
-              </p>
-            </motion.div>
+              <p className="font-sans text-xs text-on-surface/60 font-semibold mb-5">{job.company}</p>
+              <ul className="space-y-3">
+                {job.highlights.map((highlight) => (
+                  <li key={highlight} className="font-sans text-xs text-on-surface/75 leading-relaxed flex gap-2.5">
+                    <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                    <span>{highlight}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           ))}
+          </div>
+        </div>
+
+        <div className="mt-14 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <ProfileList title="Related Skills" icon={<Focus className="w-5 h-5" />} items={COACH_INFO.skills} />
+          <ProfileList title="Certifications" icon={<Medal className="w-5 h-5" />} items={COACH_INFO.certifications} />
+          <ProfileList title="Education" icon={<GraduationCap className="w-5 h-5" />} items={COACH_INFO.education} />
         </div>
 
       </div>
     </section>
+  );
+}
+
+function ProfileList({ title, icon, items }: { title: string; icon: React.ReactNode; items: string[] }) {
+  return (
+    <div className="bg-surface-container-lowest border border-outline/20 p-6 md:p-7">
+      <div className="flex items-center gap-3 text-primary mb-5">
+        {icon}
+        <h4 className="font-anton text-lg uppercase tracking-wider text-on-surface">{title}</h4>
+      </div>
+      <ul className="space-y-3">
+        {items.map((item) => (
+          <li key={item} className="font-sans text-xs text-on-surface/75 leading-relaxed border-b border-outline-variant/20 pb-3 last:border-0 last:pb-0">
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }

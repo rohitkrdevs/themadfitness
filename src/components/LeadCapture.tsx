@@ -116,7 +116,7 @@ export default function LeadCapture({ selectedInquiryGoal, onResetGoal }: LeadCa
                 Get In <span className="text-primary italic">Touch</span>
               </h2>
               <p className="font-sans text-xs md:text-sm text-gray-400 mb-10 max-w-sm leading-relaxed">
-                Take the final step to structure your physical trajectory. Schedule a direct assessment session with your personal fitness coach at our facilities in Noida or Ranchi.
+                Take the next step toward your fitness goals. Schedule a direct assessment or personal coaching consultation with Madhukar Mishra in New Delhi.
               </p>
 
               {/* Direct coordinates list */}
@@ -127,8 +127,8 @@ export default function LeadCapture({ selectedInquiryGoal, onResetGoal }: LeadCa
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-mono text-[10px] uppercase font-bold text-gray-500 tracking-wider">FACILITY HQ</h4>
-                    <p className="font-sans text-xs text-white mt-1">Noida & Ranchi, India</p>
+                    <h4 className="font-mono text-[10px] uppercase font-bold text-gray-500 tracking-wider">ADDRESS</h4>
+                    <p className="font-sans text-xs text-white mt-1 max-w-xs leading-relaxed">B6, House No. 116, Mayur Vihar Extension, New Delhi 110091</p>
                   </div>
                 </div>
 
@@ -148,7 +148,7 @@ export default function LeadCapture({ selectedInquiryGoal, onResetGoal }: LeadCa
                   </div>
                   <div>
                     <h4 className="font-mono text-[10px] uppercase font-bold text-gray-500 tracking-wider">SECURE INBOX</h4>
-                    <a href="mailto:info@themadfitness.com" className="font-sans text-xs text-white mt-1 hover:text-primary transition-colors block">info@themadfitness.com</a>
+                    <a href="mailto:samnouske14@gmail.com" className="font-sans text-xs text-white mt-1 hover:text-primary transition-colors block">samnouske14@gmail.com</a>
                   </div>
                 </div>
 

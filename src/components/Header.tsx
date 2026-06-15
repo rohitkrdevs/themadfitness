@@ -22,7 +22,7 @@ export default function Header({ isDark, onThemeToggle }: HeaderProps) {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
 
-      const sections = ['home', 'services', 'about', 'results', 'plans', 'assessment', 'contact'];
+      const sections = ['home', 'about', 'career-history', 'results', 'services', 'plans', 'assessment', 'contact'];
       const scrollPosition = window.scrollY + 200;
 
       for (const section of sections) {
@@ -31,7 +31,7 @@ export default function Header({ isDark, onThemeToggle }: HeaderProps) {
           const top = element.offsetTop;
           const height = element.offsetHeight;
           if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(section);
+            setActiveSection(section === 'career-history' ? 'about' : section);
             break;
           }
         }
